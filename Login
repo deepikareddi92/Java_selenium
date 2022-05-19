@@ -1,0 +1,16 @@
+package prg_1;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class login_func {
+
+	public static void main(String[] args) {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://demo.guru99.com/v4/");
+		driver.manage().window().maximize();
+		driver.findElement(By.name("uid")).sendKeys("mngr401011");
+		driver.findElement(By.name("password")).sendKeys("EbasygY");
+		driver.findElement(By.name("btnLogin")).click();
+	}
+
+}
